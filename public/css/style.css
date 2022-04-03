@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap");
+* {
+  font-size: 26px;
+  font-family: "Manrope", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(193deg, 38%, 86%);
+  font-size: 20px;
+}
+
+main {
+  height: 100vh;
+  background-color: hsl(218deg, 23%, 16%);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.card {
+  background-color: hsl(217deg, 19%, 24%);
+  position: relative;
+  border-radius: 0.75em;
+  max-width: 600px;
+  margin: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.title {
+  color: hsl(150deg, 100%, 58%);
+  margin: auto;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 600;
+  padding: 1.75em 0;
+}
+
+.quote {
+  color: hsl(193deg, 38%, 86%);
+  text-align: center;
+  font-weight: 800;
+}
+
+.divider {
+  margin: auto;
+  padding-top: 1em;
+}
+
+.divider img {
+  width: 100%;
+}
+
+.icon {
+  background-color: hsl(150deg, 60%, 58%);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: -1.25em;
+  cursor: pointer;
+}
+
+.fa-square-quote {
+  color: white;
+}
+
+.icon:hover {
+  box-shadow: 0 0 5px 4px hsla(150deg, 100%, 79%, 0.5);
+}
+
+.icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.mobile-divider {
+  display: none;
+}
+
+.love {
+  margin-bottom: 2em;
+  text-align: center;
+  color: hsl(193deg, 38%, 86%);
+  font-size: 20px;
+}
+
+.fa-heart {
+  color: hsl(354deg, 90%, 52%);
+  font-size: 20px;
+  padding: 0 0.2em;
+}
+
+a:hover {
+  color: hsl(217deg, 19%, 38%);
+}
+
+.lil-icon {
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 400px) {
+  * {
+    font-size: 22px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .icon:hover {
+    box-shadow: none;
+  }
+
+  .desktop-divider {
+    display: none;
+  }
+
+  .mobile-divider {
+    display: block;
+    padding: 0.25em 0;
+  }
+
+  .love {
+    margin-bottom: 2.5em;
+  }
+}
