@@ -13,13 +13,17 @@ a {
 }
 
 main {
-  height: 100vh;
+  height: 90vh;
   background-color: hsl(218deg, 23%, 16%);
   padding: 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
+}
+
+body {
+  background-color: hsl(218deg, 23%, 16%);
 }
 
 .card {
@@ -136,19 +140,12 @@ a:hover {
 
   .love {
     margin: 0;
+    padding: 0;
   }
 
   .card {
     padding: 0;
     margin: 0;
-    margin-bottom: 4em;
-  }
-
-  main {
-    height: 80vh;
-  }
-
-  body {
-    background-color: hsl(218deg, 23%, 16%);
+    margin-bottom: 6em;
   }
 }
