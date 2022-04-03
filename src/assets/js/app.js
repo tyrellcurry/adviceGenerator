@@ -3,6 +3,7 @@ const title = document.getElementById('title');
 const quote = document.getElementById('quote');
 
 iconBtn.addEventListener('click', (e) => {
+  e.preventDefault;
   triggerAdvice();
 });
 
@@ -26,7 +27,6 @@ async function advice() {
 
 function triggerAdvice() {
   advice().then((data) => {
-    console.log(data.slip.id);
     title.innerHTML = `Advice #${data.slip.id}`;
     quote.innerHTML = `"${data.slip.advice}"`;
   });
