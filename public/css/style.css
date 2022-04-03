@@ -135,10 +135,20 @@ a:hover {
   }
 
   .love {
-    margin-bottom: 5em;
+    margin: 0;
   }
 
   .card {
-    margin-top: 2em;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 4em;
+  }
+
+  main {
+    height: 80vh;
+  }
+
+  body {
+    background-color: hsl(218deg, 23%, 16%);
   }
 }
